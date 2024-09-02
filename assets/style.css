@@ -6,6 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -40,6 +41,23 @@ body {
 
 .social-link img {
 	width: 20px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-size: 200% 200%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 60px;
+	height: 6px;
+	background-color: #000; 
+	border: 1px solid #fff;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active {
+    background-color: #fff; 
+    opacity: 1;
 }
 
 #about {
@@ -101,13 +119,15 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5c540c;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -221,6 +241,19 @@ form {
 	flex-direction: column;
 	width: 70%;
 	align-items: flex-start;
+}
+
+.required {
+	color: red;
+}
+.error-message {
+    color: red; 
+	font-family: "Inter";
+    display: none;
+}
+
+input[aria-required="true"]:invalid + .error-message {
+    display: inline; 
 }
 
 form input {
