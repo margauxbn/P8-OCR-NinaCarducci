@@ -244,10 +244,10 @@ form {
 }
 
 .required {
-	color: red;
+	color: #7d0c0c;
 }
 .error-message {
-    color: red; 
+    color: #7d0c0c; 
 	font-family: "Inter";
     display: none;
 }
