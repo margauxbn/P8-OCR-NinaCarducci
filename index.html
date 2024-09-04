@@ -5,15 +5,15 @@
 	<title>Nina Carducci - Photographe à Bordeaux</title>
 	<meta name="description" content="Nina Carducci, photographe professionnelle basée à Bordeaux, j'immortalise et mets en valeur les événements importants de votre vie : mariages, concerts, entreprises ou portraits.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.min.js"></script>
 	<meta property="og:site_name" content="Nina Carducci" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://margauxbn.github.io/P8-OCR-NinaCarducci/" />
@@ -59,8 +59,9 @@
 			"closes": "19:00"
 		  }],
 		  "sameAs": "https://www.instagram.com/ninacarducci.photo",
+		  "priceRange": "50€ - 400€"  
 		}
-		</script>
+	</script>
 </head>
 <body>
 <nav class="top-header">
@@ -192,12 +193,12 @@
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
 				<label for="nom">Nom<span class="required">*</span> </label>
-				<input type="text" name="nom" id="nom" aria-required="true">
+				<input type="text" name="nom" id="nom" required>
 				<span class="error-message" role="alert">Ce champ est requis.</span>
 				<label for="email">Email<span class="required">*</span> </label>
-				<input type="email" name="email" id="email" aria-required="true">
+				<input type="email" name="email" id="email" required>
 				<label for="message">Message<span class="required">*</span> </label>
-				<textarea name="message" id="message" cols="30" rows="10" aria-required="true"></textarea>
+				<textarea name="message" id="message" cols="30" rows="10" required></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
